@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CreatePost from './Components/CreatePost/CreatePost';
 import NavBar from './Components/Nav/NavBar';
 
 
@@ -8,7 +9,8 @@ function App() {
 
   return (
     <div>
-      <NavBar navProps={navButtons}/>
+      <NavBar navProps={navButtons} />    
+      <CreatePost />
     </div>
   );
 }
