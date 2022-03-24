@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost/CreatePost';
+import DisplayPost from './Components/DisplayPost/DisplayPost';
 import NavBar from './Components/Nav/NavBar';
 
 
@@ -11,6 +12,7 @@ function App() {
     <div>
       <NavBar navProps={navButtons} />    
       <CreatePost />
+      <DisplayPost />
     </div>
   );
 }
