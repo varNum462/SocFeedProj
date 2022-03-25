@@ -2,7 +2,7 @@
 const NavBar = (props) => {
     return ( 
         <nav className="navbar navbar-default">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="navbar-header">
                     <h1><a className="navbar-brand" href="#">Social<span className="lighter">Feed</span></a></h1>
                 </div>

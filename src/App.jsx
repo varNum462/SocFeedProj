@@ -19,10 +19,12 @@ function App() {
 
   
   return (
-    <div className="container p-5 m-10">
-      <NavBar navProps={navButtons} />    
-      <CreatePost addNewPost={addNewPost} />
-      <DisplayPost postInfo={newPosts} />
+    <div className="container-fluid m-0 mb-1 p-0">
+      <NavBar navProps={navButtons} />  
+      <div className="container">  
+        <CreatePost addNewPost={addNewPost} />
+        <DisplayPost postInfo={newPosts} />
+      </div>
     </div>
   );
 }

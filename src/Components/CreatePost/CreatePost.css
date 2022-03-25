@@ -4,7 +4,7 @@ input, textarea{
     text-align:left;
     font-size:1.5rem !important;
     border-radius:5px;
-    border:1px solid #878787;
+    border:1px solid #0d6efd !important;
     box-shadow: -3px 3px 5px #999;   
     line-height:2rem; 
 }
