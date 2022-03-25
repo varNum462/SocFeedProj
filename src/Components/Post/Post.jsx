@@ -2,15 +2,15 @@
 const Post = (props) => {
     return ( 
         <div>
-            <div>Username:</div>
-            <div>Message:</div>
-            <div>Timestamp:</div>
+            <div>Username:{props.postData.userName}</div>
+            <div>Message:{props.postData.newMessage}</div>
+            <div>Date Posted:{props.postData.datePosted}</div>
             <div>            
-            <i class="fas fa-thumbs-up"></i>
-            <i class="fas fa-thumbs-down"></i>
+            <i className="fas fa-thumbs-up"></i>
+            <i className="fas fa-thumbs-down"></i>
             </div>
         </div>
      );
 }
  
-export default Post;
+export default Post; 

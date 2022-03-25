@@ -2,9 +2,9 @@
 const NavBar = (props) => {
     return ( 
         <div>
-        {props.navProps.map((navButton) => {
+        {props.navProps.map((navButton,navIndex) => {
             return (
-            <a href={navButton.navlink}>{navButton.navbutton}</a>
+            <a key={navIndex} href={navButton.navlink}>{navButton.navbutton}</a>
             );
         })}
         </div>
