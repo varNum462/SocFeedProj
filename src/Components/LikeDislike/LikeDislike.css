@@ -1,0 +1,30 @@
+.rate_post i{
+    margin:1rem 2rem;
+    font-size:3rem;
+    color:dimgray;
+}
+
+.like>.fa-thumbs-up{
+    color:#0caf1a;
+    font-size:3.5rem;
+    text-shadow: -3px 3px 6px #888;
+    }
+    
+.like>.fa-thumbs-down{
+    color:darkgray;
+    font-size:2.5rem;
+
+}
+
+.dislike>.fa-thumbs-up{
+    color:darkgray;
+    font-size:2.5rem;
+}
+
+.dislike>.fa-thumbs-down{
+    color:rgb(235, 14, 14);
+    font-size:3.5rem;
+    text-shadow: -3px 3px 6px #888;
+}
+
+

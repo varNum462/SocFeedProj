@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './CreatePost.css'
 
 const CreatePost = (props) => {
 
@@ -14,18 +15,31 @@ const CreatePost = (props) => {
             newMessage,
             datePosted: date
         }
-        console.log(newPost);
-        props.addNewPost(newPost)
+        props.addNewPost(newPost);
+        setUserName("");
+        setNewMessage("");
     }
 
     return ( 
-        <form onSubmit={handleSubmit}>
-            <label>User Name</label>
-            <input type="text" value={userName} onChange={(event) => setUserName(event.target.value)} />
-            <label>Message</label>
-            <textarea cols="30" rows="10" value={newMessage} onChange={(event) => setNewMessage(event.target.value)} ></textarea>
-            <input type="submit" value="Create Post" />
-        </form>
+        <div>
+            <div className="m-3 container">
+                <h2>Create a Post</h2>
+                <form className="form-horizontal" onSubmit={handleSubmit}>
+                    <div className="form-group">
+                        <label className="control-label">User Name</label>
+                        <input type="text" className="form-control" value={userName} onChange={(event) => setUserName(event.target.value)} />
+                    </div>
+                    <div className="form-group">
+                        <label className="control-label">Message</label>
+                        <textarea className="form-control" value={newMessage} onChange={(event) => setNewMessage(event.target.value)} ></textarea>
+                    </div>
+                    <div className="form-group">
+                        <input type="submit" className="btn btn-warning" value="Create Post" />
+                    </div>
+                </form>
+            </div>
+            <hr />
+        </div>
      );
 }
  

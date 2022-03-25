@@ -1,14 +1,15 @@
+import LikeDislike from "../LikeDislike/LikeDislike";
+import './Post.css'
 
 const Post = (props) => {
     return ( 
-        <div>
-            <div>Username:{props.postData.userName}</div>
-            <div>Message:{props.postData.newMessage}</div>
-            <div>Date Posted:{props.postData.datePosted}</div>
-            <div>            
-            <i className="fas fa-thumbs-up"></i>
-            <i className="fas fa-thumbs-down"></i>
+        <div className="container p-0">
+            <div className="d-flex p-2 justify-content-between bg-info text-dark post_header">
+                <h2 className="col-xl-6">Posted by: {props.postData.userName}</h2>
+                <div className="col-xl-6 text-end post_date">Date Posted:{props.postData.datePosted}</div>
             </div>
+            <div className="messagebox"><div className="post_message">{props.postData.newMessage}</div></div>
+            <div className="text-end"><div className="thumbs"><LikeDislike /></div></div>           
         </div>
      );
 }
